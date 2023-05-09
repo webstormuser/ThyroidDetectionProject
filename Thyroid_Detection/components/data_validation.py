@@ -4,7 +4,6 @@ from Thyroid_Detection.logger import logging
 from scipy.stats import ks_2samp
 from scipy.stats import chi2_contingency
 from typing import Optional
-from sklearn.preprocessing import LabelEncoder
 import os,sys 
 import pandas as pd
 from Thyroid_Detection import utils
