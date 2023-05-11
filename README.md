@@ -37,13 +37,20 @@ The main objective of this project is to predict if a person is having compensat
                   Link:https://archive.ics.uci.edu/ml/datasets/thyroid+disease
 
 * Data Cleaning and Preprocessing :
-      *  Removing unwanted spaces in column names 
-      *  Detecting null values and handling by SimpleImputer for Categorical and Numerical data 
-      *  Categorical Features handling by onehot encoding 
-      *  Encoding Target column by label encoding 
-      *  Feature scaling by StandardScaling 
-      *  Handling imbalanced dataset 
-      *  Selecting best features and dropping useless features 
+
+      * Removing unwanted spaces in column names 
+
+      * Detecting null values and handling by SimpleImputer for Categorical and Numerical data 
+
+      * Categorical Features handling by onehot encoding
+
+      * Encoding Target column by label encoding 
+
+      * Feature scaling by StandardScaling 
+
+      * Handling imbalanced dataset 
+
+      * Selecting best features and dropping useless features 
 
 
 # Model Creation and Evaluation
