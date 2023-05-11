@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2{
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 20px;
+      background-color: #8B0000;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .row input[type="text"],
+    .row select {
+      width: 45%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    
+    
+
+    .row input[type="number"],
+    .row select {
+      width: 45%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .row label {
+      width: 45%;
+      padding-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="{{url_for('predict_data')}}" method="POST">
+      <div class="row">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder=" Please Enter your age" min=1 max=100 required  >
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+        <option disabled selected value="">Please select your gender</option>
+          <option value="F">Female</option>
+          <option value="M">Male</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="on_thyroxine">On Thyroxine:</label>
+        <select id="on_thyroxine" name="on_thyroxine" required>
+        <option disabled selected value="">Are you consuming T4 </option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+        <label for="query_on_thyroxine">Query on Thyroxine:</label>
+        <select id="query_on_thyroxine" name="query_on_thyroxine" required>
+         <option disabled selected value="">Are you not sure you are taking any thyroxine medication</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="on_antithyroid_medication">On Antithyroid Medication:</label>
+        <select id="on_antithyroid_medication" name="on_antithyroid_medication" required>
+        <option disabled selected value="">Are you consuing any antithyroid medication</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+        <label for="sick">Sick:</label>
+        <select id="sick" name="sick" required>
+        <option disabled selected value="">Are you facing illness</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+      </div>
+      
+      
+      <div class="row">
+        <label for="pregnant">Pregnant:</label>
+        <select id="pregnant" name="pregnant"required>
+        <option disabled selected value="">Are you pregnant</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+        <label for="I131_treatment">I131_treatment:</label>
+        <select id="I131_treatment" name="I131_treatment" required>
+        <option disabled selected value="">Are you taking I131_treatmen</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+      </div>
+      
+      
+      
+      <div class="row">
+        <label for="tumor">Tumor:</label>
+        <select id="tumor" name="tumor" required>
+         <option disabled selected value="">Have any tumor in throat</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+        <label for="hypopituitary">Hypopituitary:</label>
+        <select id="hypopituitary" name="hypopituitary" required>
+          <option disabled selected value="">Are you suffering from hypopituitary gland related issues</option>
+          <option value="t">Yes</option>
+          <option value="f">No</option>
+        </select>
+      </div>
+      
+      <div class="row">
+      	<label for="psych">Psych:</label>
+        	<select id="psych" name="psych" required>
+             <option disabled selected value="">Are you suffering from any mental stress</option>
+          	<option value="t">Yes</option>
+          	<option value="f">No</option>
+        	</select>
+        <label for="TSH">TSH:</label>
+        <input type="number" id="TSH" name="TSH" step="0.01" min=0.01 max=30.0 placeholder="TSH in range (0.4 to 30.0) exa:1.30,4.30"required>
+    </div>
+    
+    <div class="row">
+        <label for="T3">T3:</label>
+        <input type='number' id='T3' name='T3' step="0.01" min=0.05 max=10.0 placeholder="exa: 2.5" required>
+        <label for="TT4">TT4:</label>
+        <input type="number" id="TT4" name="TT4"  min=2.0  max= 500.0 placeholder="exa: 430,102,109"required>
+    </div>
+    
+    <div class="row"> 
+        <label for="T4U">T4U:</label>
+        <input type='number' id='T4U' name='T4U' step="0.01" min=0.25 max=5.00 placeholder="Exa:1.14,0.91" required>
+        <label for="FTI">FTI:</label>
+        <input type="number" id="FTI" name="FTI" step="0.01" min=2.0 max=500 placeholder="Exa:109,12070 "required>
+      </div>
+
+      <input type="submit" class="submit-btn" value="Submit">
+
+      <h2>
+        The Thyroid Prediction for above patient is :{{result}}
+    </h2>
+    </form>
+  </div>
+</body>
+</html>

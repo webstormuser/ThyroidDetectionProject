@@ -36,7 +36,8 @@ class DataTransformation:
     @classmethod
     def get_data_transformer_object(cls)->Pipeline:
         try:
-            Categorical_Features=['sex', 'on_thyroxine', 'query_on_thyroxine','on_antithyroid_medication', 'sick', 'pregnant', 'I131_treatment','tumor', 'hypopituitary', 'psych']
+            Categorical_Features=['sex', 'on_thyroxine', 'query_on_thyroxine','on_antithyroid_medication', 'sick', 'pregnant', 'I131_treatment',
+                        'tumor', 'hypopituitary', 'psych']
             Numerical_Features=['age','TSH','T3','TT4','T4U','FTI']
             categorical_transformer = Pipeline(steps=[
                         ('imputer', SimpleImputer(strategy='most_frequent')),

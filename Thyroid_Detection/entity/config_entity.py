@@ -47,7 +47,7 @@ class DataValidationConfig:
         self.data_validation_dir = os.path.join(training_pipeline_config.artifact_dir , "data_validation")
         self.report_file_path=os.path.join(self.data_validation_dir, "report.yaml")
         self.missing_threshold:float = 0.3
-        self.unrelevant_columns:list =['thyroid_surgery','query_hypothyroid','query_hyperthyroid','lithium','goitre','TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured','referral_source']
+        self.unrelevant_columns:list =['TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured','referral_source','thyroid_surgery','query_hypothyroid','query_hyperthyroid','lithium','goitre']
         #self.exclude_columns:list=[TARGET_COLUMN,'sex','on_thyroxine','query_on_thyroxine','on_antithyroid_medication','sick','pregnant','I131_treatment','tumor','hypopituitary','psych']
         self.base_file_path = os.path.join("hypothyroid_data.csv")
 
