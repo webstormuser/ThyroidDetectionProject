@@ -7,13 +7,13 @@ The main objective of this project is to predict if a person is having compensat
 
 # Technical Aspects: 
 
-      `* Python 3.7 and more
-       * Important Libraries: sklearn, pandas, numpy, matplotlib & seaborn
-       * Front-end: HTML, CSS
-       * Back-end: Flask framework
-       * IDE: Jupyter Notebook, Pycharm or  VSCode
-       * Database: MongoDB
-       * Deployment: Heroku or  AWS
+ `    *   Python 3.7 and more
+      *   Important Libraries: sklearn, pandas, numpy, matplotlib & seaborn
+      *   Front-end: HTML, CSS
+      *   Back-end: Flask framework
+      *   IDE: Jupyter Notebook, Pycharm or  VSCode
+      *   Database: MongoDB
+      *   Deployment: Heroku or  AWS
 
 # How to run this app :
 
