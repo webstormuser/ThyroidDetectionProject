@@ -24,6 +24,15 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    
+    h1{
+      max-width: 1000px;
+      margin: 8px auto;
+      padding: 10px;
+      background-color: #8B0000;
+      border-radius: 6px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
 
     .row {
       display: flex;
@@ -78,6 +87,7 @@
 </head>
 <body>
   <div class="container">
+    <h1> Thyroid Disease Prediction </h1>
     <form action="{{url_for('predict_data')}}" method="POST">
       <div class="row">
         <label for="age">Age:</label>
