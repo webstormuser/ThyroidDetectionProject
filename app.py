@@ -55,7 +55,7 @@ def predict_data():
 
 if __name__ == '__main__': 
     try:
-        app.run(host='0.0.0.0',port=5002,debug=True)
-        #app.run(host='0.0.0.0')
+        #app.run(host='0.0.0.0',port=5002,debug=True)
+        app.run(host='0.0.0.0')
     except Exception as e:
         raise ThyroidException(e,sys)
