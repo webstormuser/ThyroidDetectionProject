@@ -9,10 +9,8 @@ class EnvironmentVariable:
     mongo_db_url:str = os.getenv("MONGO_DB_URL")
     aws_access_key_id:str = os.getenv("AWS_ACCESS_KEY_ID")
     aws_access_secret_key:str = os.getenv("AWS_SECRET_ACCESS_KEY")
-    aws_region:str=os.getenv("AWS_REGION")
-    ecr_repository_name:str=os.getenv("ECR_REPOSITORY_NAME")
+    aws_default_region:str=os.getenv("AWS_DEFAULT_REGION")
     bucket_name:str=os.getenv("BUCKET_NAME")
-    aws_ecr_login_uri:str=os.getenv("AWS_ECR_LOGIN_URI")
 
 
 env_var = EnvironmentVariable()
