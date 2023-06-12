@@ -11,6 +11,9 @@ class EnvironmentVariable:
     aws_access_secret_key:str = os.getenv("AWS_SECRET_ACCESS_KEY")
     aws_region:str=os.getenv("AWS_REGION")
     bucket_name:str=os.getenv("BUCKET_NAME")
+    aws_ecr_login_uri:str=os.getenv("AWS_ECR_LOGIN_URI")
+    ecr_repository_name:str=os.getenv("ECR_REPOSITORY_NAME")
+    
 
 
 env_var = EnvironmentVariable()
