@@ -12,7 +12,7 @@ with DAG(
     default_args={'retries': 2},
     # [END default_args]
     description='Thyroid Detection',
-    schedule_interval="@yearlys",
+    schedule_interval="@yearly",
     start_date=pendulum.datetime(2023, 6, 13, tz="UTC"),
     catchup=False,
     tags=['example'],
