@@ -10,4 +10,4 @@ RUN airflow users create  -e kakdeashwini12@gmail.com -f Ashwini -l Kakde -p adm
 RUN chmod 777 start.sh
 RUN apt update -y && apt install awscli -y
 ENTRYPOINT [ "/bin/sh" ]
-CMD ["python3","app.py"]
+CMD ["start.sh","python3","app.py"]
