@@ -1,8 +1,6 @@
 FROM python:3.9
-USER root
-RUN mkdir /app
-COPY . /app/
 WORKDIR /app/
+COPY . /app
 RUN pip3 install -r requirements.txt
 ENV AIRFLOW_HOME="/app/airflow"
 ENV AIRFLOW__CORE__DAGBAG_IMPORT_TIMEOUT=1000
@@ -12,4 +10,4 @@ RUN airflow users create  -e kakdeashwini12@gmail.com -f Ashwini -l Kakde -p adm
 RUN chmod 777 start.sh
 RUN apt update -y && apt install awscli -y
 ENTRYPOINT [ "/bin/sh" ]
-CMD ["start.sh"]
+CMD ["start.sh","python3","app.py"]
