@@ -7,7 +7,6 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from Thyroid_Detection.predictor import ModelResolver
-#from Insurance_Prediction.pipeline.training_pipeline import start_training_pipeline
 from Thyroid_Detection.pipeline.batch_prediction import CustomData,start_batch_prediction,PredictPipeline
 from Thyroid_Detection.utils import load_object
 from dotenv import load_dotenv
@@ -56,6 +55,6 @@ def predict_data():
 if __name__ == '__main__': 
     try:
         #app.run(host='0.0.0.0',port=5002,debug=True)
-        app.run(host='0.0.0.0')
+        app.run(host='0.0.0.0',port=5002)
     except Exception as e:
         raise ThyroidException(e,sys)

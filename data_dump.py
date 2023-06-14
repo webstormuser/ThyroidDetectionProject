@@ -4,7 +4,7 @@ import json
 # Provide the mongodb localhost url to connect python to mongodb.
 client = pymongo.MongoClient("mongodb+srv://Ashwini:suhan10@cluster0.bkwvjrd.mongodb.net/?retryWrites=true&w=majority")
 
-DATA_FILE_PATH="F:\\New folder\\Thyroid_Detection\hypothyroid_data.csv"
+DATA_FILE_PATH="hypothyroid_data.csv"
 DATABASE_NAME="HealthCare"
 COLLECTION_NAME="thyroid_data"
 
