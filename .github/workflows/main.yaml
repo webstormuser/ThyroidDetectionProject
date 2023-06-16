@@ -82,7 +82,7 @@ jobs:
       export BUCKET_NAME="${{ secrets.BUCKET_NAME }}"
       export MONGO_DB_URL="${{ secrets.MONGO_DB_URL }}"
       docker compose up -d
-      docker run -d -p 80:80 --ipc="host" --name="$IMAGE_NAME" "$IMAGE_NAME"
+      docker run -d -p 80:80 --ipc="host" --name="thyroid" "$IMAGE_NAME"
   - name: Docker System Prune to Remove Old Images
     run: |
       docker system prune -f
