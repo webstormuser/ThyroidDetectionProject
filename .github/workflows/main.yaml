@@ -83,7 +83,7 @@ jobs:
       export MONGO_DB_URL="${{ secrets.MONGO_DB_URL }}"
       docker stop thyroid || true
       docker rm thyroid || true
-      docker-compose up -d
+      docker compose up -d
       docker run -d -p 80:80 --ipc="host" --name="thyroid" "$IMAGE_NAME"
   - name: Docker System Prune to Remove Old Images
     run: |
