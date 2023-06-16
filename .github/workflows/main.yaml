@@ -81,7 +81,7 @@ jobs:
       export AWS_DEFAULT_REGION="${{ secrets.AWS_REGION }}"
       export BUCKET_NAME="${{ secrets.BUCKET_NAME }}"
       export MONGO_DB_URL="${{ secrets.MONGO_DB_URL }}"
-      docker-compose up -d
+      docker compose up -d
       CONTAINER_NAME=$(docker ps -q --filter name=thyroid)
       docker run -d -p 80:80 --ipc="host" --name="$CONTAINER_NAME" "$IMAGE_NAME"
   - name: Docker System Prune to Remove Old Images
