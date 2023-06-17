@@ -17,11 +17,9 @@ pandas
 PyYAML
 numpy
 scikit-learn
-apache-airflow
 Flask 
 flask_cors
 seaborn
-streamlit
 azureml
 scipy
 -e .
