@@ -64,7 +64,7 @@ class PredictPipeline:
 
             
         except Exception as e :
-            raise InsuranceException(e,sys)
+            raise ThyroidException(e,sys)
 
 class CustomData:
     def __init__(self, sex:str, on_thyroxine:str, query_on_thyroxine:str,
