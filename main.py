@@ -10,7 +10,7 @@ from Thyroid_Detection.components.model_trainer import ModelTrainer
 from Thyroid_Detection.pipeline.training_pipeline import start_training_pipeline
 from Thyroid_Detection.pipeline.batch_prediction import start_batch_prediction
 from Thyroid_Detection.predictor import ModelResolver
-file_path="F:\\New folder\\Thyroid_Detection\hypothyroid_data.csv"
+file_path="hypothyroid_data.csv"
 
 if __name__=="__main__":
     try:
