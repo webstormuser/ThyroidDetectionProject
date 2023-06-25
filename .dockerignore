@@ -1,8 +1,6 @@
 artifact
 logs
 Notebook
-prediction
-saved_models
 *.egg.info
 .env
 batch_prediction.py
