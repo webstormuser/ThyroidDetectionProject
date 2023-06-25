@@ -20,6 +20,6 @@ scikit-learn
 Flask 
 flask_cors
 seaborn
-azureml
 scipy
+apache-airflow
 -e .
