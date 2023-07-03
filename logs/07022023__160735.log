@@ -1,8 +1,0 @@
-[ 2023-07-02 16:07:57,787 ] 187 werkzeug - WARNING -  * Debugger is active!
-[ 2023-07-02 16:07:57,864 ] 187 werkzeug - INFO -  * Debugger PIN: 279-403-857
-[ 2023-07-02 16:08:06,234 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:08:06] "GET / HTTP/1.1" 200 -
-[ 2023-07-02 16:08:07,604 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:08:07] "POST /prediction HTTP/1.1" 200 -
-[ 2023-07-02 16:08:07,605 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:08:07] "POST /prediction HTTP/1.1" 200 -
-[ 2023-07-02 16:08:55,985 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:08:55] "POST /prediction HTTP/1.1" 200 -
-[ 2023-07-02 16:09:10,119 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:09:10] "GET / HTTP/1.1" 200 -
-[ 2023-07-02 16:10:06,895 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:10:06] "POST /prediction HTTP/1.1" 200 -

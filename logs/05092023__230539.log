@@ -1,0 +1,162 @@
+[ 2023-05-09 23:05:40,370 ] 157 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[ 2023-05-09 23:05:45,232 ] 15 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-09 23:05:45,232 ] 22 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-05-09 23:05:45,232 ] 21 root - INFO - Reading data from database: HealthCare and collection: thyroid_data
+[ 2023-05-09 23:05:48,500 ] 23 root - INFO - Found columns: Index(['_id', 'age', 'sex', 'on_thyroxine', 'query_on_thyroxine',
+       'on_antithyroid_medication', 'sick', 'pregnant', 'thyroid_surgery',
+       'I131_treatment', 'query_hypothyroid', 'query_hyperthyroid', 'lithium',
+       'goitre', 'tumor', 'hypopituitary', 'psych', 'TSH_measured', 'TSH',
+       'T3_measured', 'T3', 'TT4_measured', 'TT4', 'T4U_measured', 'T4U',
+       'FTI_measured', 'FTI', 'TBG_measured', 'TBG', 'referral_source',
+       'Class'],
+      dtype='object')
+[ 2023-05-09 23:05:48,502 ] 25 root - INFO - Dropping column: _id 
+[ 2023-05-09 23:05:48,506 ] 27 root - INFO - Row and columns in df: (3772, 30)
+[ 2023-05-09 23:05:48,507 ] 28 root - INFO - Columns in dataframe : Index(['age', 'sex', 'on_thyroxine', 'query_on_thyroxine',
+       'on_antithyroid_medication', 'sick', 'pregnant', 'thyroid_surgery',
+       'I131_treatment', 'query_hypothyroid', 'query_hyperthyroid', 'lithium',
+       'goitre', 'tumor', 'hypopituitary', 'psych', 'TSH_measured', 'TSH',
+       'T3_measured', 'T3', 'TT4_measured', 'TT4', 'T4U_measured', 'T4U',
+       'FTI_measured', 'FTI', 'TBG_measured', 'TBG', 'referral_source',
+       'Class'],
+      dtype='object')
+[ 2023-05-09 23:05:48,507 ] 29 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-09 23:05:48,507 ] 31 root - INFO -  age : float64
+[ 2023-05-09 23:05:48,508 ] 31 root - INFO -  sex : object
+[ 2023-05-09 23:05:48,508 ] 31 root - INFO -  on_thyroxine : object
+[ 2023-05-09 23:05:48,508 ] 31 root - INFO -  query_on_thyroxine : object
+[ 2023-05-09 23:05:48,509 ] 31 root - INFO -  on_antithyroid_medication : object
+[ 2023-05-09 23:05:48,509 ] 31 root - INFO -  sick : object
+[ 2023-05-09 23:05:48,509 ] 31 root - INFO -  pregnant : object
+[ 2023-05-09 23:05:48,510 ] 31 root - INFO -  thyroid_surgery : object
+[ 2023-05-09 23:05:48,510 ] 31 root - INFO -  I131_treatment : object
+[ 2023-05-09 23:05:48,510 ] 31 root - INFO -  query_hypothyroid : object
+[ 2023-05-09 23:05:48,510 ] 31 root - INFO -  query_hyperthyroid : object
+[ 2023-05-09 23:05:48,511 ] 31 root - INFO -  lithium : object
+[ 2023-05-09 23:05:48,511 ] 31 root - INFO -  goitre : object
+[ 2023-05-09 23:05:48,511 ] 31 root - INFO -  tumor : object
+[ 2023-05-09 23:05:48,511 ] 31 root - INFO -  hypopituitary : object
+[ 2023-05-09 23:05:48,512 ] 31 root - INFO -  psych : object
+[ 2023-05-09 23:05:48,512 ] 31 root - INFO -  TSH_measured : object
+[ 2023-05-09 23:05:48,512 ] 31 root - INFO -  TSH : float64
+[ 2023-05-09 23:05:48,512 ] 31 root - INFO -  T3_measured : object
+[ 2023-05-09 23:05:48,513 ] 31 root - INFO -  T3 : float64
+[ 2023-05-09 23:05:48,513 ] 31 root - INFO -  TT4_measured : object
+[ 2023-05-09 23:05:48,513 ] 31 root - INFO -  TT4 : float64
+[ 2023-05-09 23:05:48,513 ] 31 root - INFO -  T4U_measured : object
+[ 2023-05-09 23:05:48,513 ] 31 root - INFO -  T4U : float64
+[ 2023-05-09 23:05:48,514 ] 31 root - INFO -  FTI_measured : object
+[ 2023-05-09 23:05:48,514 ] 31 root - INFO -  FTI : float64
+[ 2023-05-09 23:05:48,514 ] 31 root - INFO -  TBG_measured : object
+[ 2023-05-09 23:05:48,514 ] 31 root - INFO -  TBG : object
+[ 2023-05-09 23:05:48,515 ] 31 root - INFO -  referral_source : object
+[ 2023-05-09 23:05:48,515 ] 31 root - INFO -  Class : object
+[ 2023-05-09 23:05:48,515 ] 28 root - INFO - Save data in feature store
+[ 2023-05-09 23:05:48,531 ] 33 root - INFO - Any duplicate records:61
+[ 2023-05-09 23:05:48,531 ] 36 root - INFO - Dropping duplicate record
+[ 2023-05-09 23:05:48,549 ] 39 root - INFO -  Rechecking any duplicate record or not
+[ 2023-05-09 23:05:48,567 ] 40 root - INFO - Duplicate record :0
+[ 2023-05-09 23:05:48,567 ] 45 root - INFO - Create feature store folder if not available
+[ 2023-05-09 23:05:48,580 ] 49 root - INFO - Save df to feature store folder
+[ 2023-05-09 23:05:48,637 ] 55 root - INFO - split dataset into train and test set
+[ 2023-05-09 23:05:48,641 ] 59 root - INFO - create dataset directory folder if not available
+[ 2023-05-09 23:05:48,642 ] 64 root - INFO - Save df to feature store folder
+[ 2023-05-09 23:05:48,713 ] 77 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_ingestion\\feature_store\\hypothyroid_data.csv', train_file_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_ingestion\\dataset\\train.csv', test_file_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_ingestion\\dataset\\test.csv')
+[ 2023-05-09 23:05:48,717 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-09 23:05:48,717 ] 188 root - INFO - Reading base dataframe
+[ 2023-05-09 23:05:48,741 ] 191 root - INFO - Drop null values colums from base df
+[ 2023-05-09 23:05:48,749 ] 40 root - INFO - selecting column name which contains null above to 0.3
+[ 2023-05-09 23:05:48,750 ] 43 root - INFO - Columns to drop: ['TBG']
+[ 2023-05-09 23:05:48,753 ] 194 root - INFO - Reading train dataframe
+[ 2023-05-09 23:05:48,774 ] 196 root - INFO - Reading test dataframe
+[ 2023-05-09 23:05:48,784 ] 200 root - INFO - Drop null values colums from train df
+[ 2023-05-09 23:05:48,791 ] 40 root - INFO - selecting column name which contains null above to 0.3
+[ 2023-05-09 23:05:48,792 ] 43 root - INFO - Columns to drop: ['TBG']
+[ 2023-05-09 23:05:48,795 ] 202 root - INFO - Drop null values colums from test df
+[ 2023-05-09 23:05:48,798 ] 40 root - INFO - selecting column name which contains null above to 0.3
+[ 2023-05-09 23:05:48,798 ] 43 root - INFO - Columns to drop: ['TBG']
+[ 2023-05-09 23:05:48,800 ] 205 root - INFO - Selected features from Feature selection technique Using REFCV are sex, on_thyroxine,query_on_thyroxine,on_antithyroid_medication,sick,pregnant,I131_treatment,tumor,hypopituitary,psych,TSH,T3,TT4, T4U,FTI
+[ 2023-05-09 23:05:48,800 ] 207 root - INFO - Dropping unrelevent columns from base df
+[ 2023-05-09 23:05:48,800 ] 59 root - INFO -  Dropping unrelevant columns from train and test file
+[ 2023-05-09 23:05:48,800 ] 60 root - INFO -  Columns to drop :['thyroid_surgery', 'query_hypothyroid', 'query_hyperthyroid', 'lithium', 'goitre', 'TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'referral_source']
+[ 2023-05-09 23:05:48,803 ] 210 root - INFO -  Dropping unrelevent columns from train_df
+[ 2023-05-09 23:05:48,803 ] 59 root - INFO -  Dropping unrelevant columns from train and test file
+[ 2023-05-09 23:05:48,803 ] 60 root - INFO -  Columns to drop :['thyroid_surgery', 'query_hypothyroid', 'query_hyperthyroid', 'lithium', 'goitre', 'TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'referral_source']
+[ 2023-05-09 23:05:48,805 ] 213 root - INFO -  Dropping unrelevent columns from test_df
+[ 2023-05-09 23:05:48,805 ] 59 root - INFO -  Dropping unrelevant columns from train and test file
+[ 2023-05-09 23:05:48,805 ] 60 root - INFO -  Columns to drop :['thyroid_surgery', 'query_hypothyroid', 'query_hyperthyroid', 'lithium', 'goitre', 'TSH_measured', 'T3_measured', 'TT4_measured', 'T4U_measured', 'FTI_measured', 'TBG_measured', 'referral_source']
+[ 2023-05-09 23:05:48,807 ] 219 root - INFO - Is all required columns present in train df
+[ 2023-05-09 23:05:48,807 ] 221 root - INFO - Is all required columns present in test df
+[ 2023-05-09 23:05:48,807 ] 226 root - INFO - As all column are available in train df hence detecting data drift
+[ 2023-05-09 23:05:48,816 ] 146 root - INFO - Hypothesis age: float64, float64 
+[ 2023-05-09 23:05:48,915 ] 146 root - INFO - Hypothesis TSH: float64, float64 
+[ 2023-05-09 23:05:49,030 ] 146 root - INFO - Hypothesis T3: float64, float64 
+[ 2023-05-09 23:05:49,135 ] 146 root - INFO - Hypothesis TT4: float64, float64 
+[ 2023-05-09 23:05:49,392 ] 146 root - INFO - Hypothesis T4U: float64, float64 
+[ 2023-05-09 23:05:49,642 ] 146 root - INFO - Hypothesis FTI: float64, float64 
+[ 2023-05-09 23:05:49,797 ] 165 root - INFO - Hypothesis sex: object, object 
+[ 2023-05-09 23:05:49,800 ] 165 root - INFO - Hypothesis on_thyroxine: object, object 
+[ 2023-05-09 23:05:49,803 ] 165 root - INFO - Hypothesis query_on_thyroxine: object, object 
+[ 2023-05-09 23:05:49,805 ] 165 root - INFO - Hypothesis on_antithyroid_medication: object, object 
+[ 2023-05-09 23:05:49,806 ] 165 root - INFO - Hypothesis sick: object, object 
+[ 2023-05-09 23:05:49,808 ] 165 root - INFO - Hypothesis pregnant: object, object 
+[ 2023-05-09 23:05:49,809 ] 165 root - INFO - Hypothesis I131_treatment: object, object 
+[ 2023-05-09 23:05:49,811 ] 165 root - INFO - Hypothesis tumor: object, object 
+[ 2023-05-09 23:05:49,812 ] 165 root - INFO - Hypothesis hypopituitary: object, object 
+[ 2023-05-09 23:05:49,814 ] 165 root - INFO - Hypothesis psych: object, object 
+[ 2023-05-09 23:05:49,815 ] 165 root - INFO - Hypothesis Class: object, object 
+[ 2023-05-09 23:05:49,816 ] 229 root - INFO - As all column are available in test df hence detecting data drift
+[ 2023-05-09 23:05:49,829 ] 146 root - INFO - Hypothesis age: float64, float64 
+[ 2023-05-09 23:05:49,963 ] 146 root - INFO - Hypothesis TSH: float64, float64 
+[ 2023-05-09 23:05:50,242 ] 146 root - INFO - Hypothesis T3: float64, float64 
+[ 2023-05-09 23:05:50,421 ] 146 root - INFO - Hypothesis TT4: float64, float64 
+[ 2023-05-09 23:05:50,571 ] 146 root - INFO - Hypothesis T4U: float64, float64 
+[ 2023-05-09 23:05:50,716 ] 146 root - INFO - Hypothesis FTI: float64, float64 
+[ 2023-05-09 23:05:50,885 ] 165 root - INFO - Hypothesis sex: object, object 
+[ 2023-05-09 23:05:50,886 ] 165 root - INFO - Hypothesis on_thyroxine: object, object 
+[ 2023-05-09 23:05:50,889 ] 165 root - INFO - Hypothesis query_on_thyroxine: object, object 
+[ 2023-05-09 23:05:50,892 ] 165 root - INFO - Hypothesis on_antithyroid_medication: object, object 
+[ 2023-05-09 23:05:50,893 ] 165 root - INFO - Hypothesis sick: object, object 
+[ 2023-05-09 23:05:50,895 ] 165 root - INFO - Hypothesis pregnant: object, object 
+[ 2023-05-09 23:05:50,901 ] 165 root - INFO - Hypothesis I131_treatment: object, object 
+[ 2023-05-09 23:05:50,904 ] 165 root - INFO - Hypothesis tumor: object, object 
+[ 2023-05-09 23:05:50,907 ] 165 root - INFO - Hypothesis hypopituitary: object, object 
+[ 2023-05-09 23:05:50,909 ] 165 root - INFO - Hypothesis psych: object, object 
+[ 2023-05-09 23:05:50,912 ] 165 root - INFO - Hypothesis Class: object, object 
+[ 2023-05-09 23:05:50,918 ] 234 root - INFO - Write reprt in yaml file
+[ 2023-05-09 23:05:50,964 ] 237 root - INFO - Index(['age', 'sex', 'on_thyroxine', 'query_on_thyroxine',
+       'on_antithyroid_medication', 'sick', 'pregnant', 'I131_treatment',
+       'tumor', 'hypopituitary', 'psych', 'TSH', 'T3', 'TT4', 'T4U', 'FTI',
+       'Class'],
+      dtype='object')
+[ 2023-05-09 23:05:50,965 ] 238 root - INFO - Index(['age', 'sex', 'on_thyroxine', 'query_on_thyroxine',
+       'on_antithyroid_medication', 'sick', 'pregnant', 'I131_treatment',
+       'tumor', 'hypopituitary', 'psych', 'TSH', 'T3', 'TT4', 'T4U', 'FTI',
+       'Class'],
+      dtype='object')
+[ 2023-05-09 23:05:50,966 ] 239 root - INFO - Index(['age', 'sex', 'on_thyroxine', 'query_on_thyroxine',
+       'on_antithyroid_medication', 'sick', 'pregnant', 'I131_treatment',
+       'tumor', 'hypopituitary', 'psych', 'TSH', 'T3', 'TT4', 'T4U', 'FTI',
+       'Class'],
+      dtype='object')
+[ 2023-05-09 23:05:50,966 ] 242 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_validation\\report.yaml')
+[ 2023-05-09 23:05:50,967 ] 30 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-09 23:05:51,181 ] 89 root - INFO - Before resampling in training set Input: (2968, 16) Target:(2968,)
+[ 2023-05-09 23:05:51,190 ] 91 root - INFO - After resampling in training set Input: (10972, 16) Target:(10972,)
+[ 2023-05-09 23:05:51,190 ] 93 root - INFO - Before resampling in testing set Input: (743, 16) Target:(743,)
+[ 2023-05-09 23:05:51,193 ] 95 root - INFO - After resampling in testing set Input: (2708, 16) Target:(2708,)
+[ 2023-05-09 23:05:51,220 ] 61 root - INFO - Entered the save_object method of utils
+[ 2023-05-09 23:05:51,236 ] 65 root - INFO - Exited the save_object method of utils
+[ 2023-05-09 23:05:51,236 ] 61 root - INFO - Entered the save_object method of utils
+[ 2023-05-09 23:05:51,240 ] 65 root - INFO - Exited the save_object method of utils
+[ 2023-05-09 23:05:51,241 ] 126 root - INFO - Data transformation object DataTransformationArtifact(transform_object_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_transformation\\transformer\\transformer.pkl', transformed_train_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_transformation\\transformed\\train.npz', transformed_test_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_transformation\\transformed\\test.npz', target_encoder_path='F:\\New folder\\ThyroidDetection\\artifact\\05092023__230545\\data_transformation\\target_encoder\\target_encoder.pkl')
+[ 2023-05-09 23:05:51,244 ] 16 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-09 23:05:51,244 ] 34 root - INFO - loading train and test numpy array for model training 
+[ 2023-05-09 23:05:51,250 ] 39 root - INFO - Splitting input and target feature from both train and test arr.
+[ 2023-05-09 23:05:51,251 ] 43 root - INFO - Train the model
+[ 2023-05-09 23:05:51,284 ] 46 root - INFO - Calculating f1 train score
+[ 2023-05-09 23:05:51,297 ] 50 root - INFO - Calculating recall train score
+[ 2023-05-09 23:05:51,314 ] 54 root - INFO -  Calculating f1 test score 
+[ 2023-05-09 23:05:51,320 ] 59 root - INFO -  Calculating recall test score
+[ 2023-05-09 23:05:51,328 ] 63 root - INFO - train score:1.0 and tests score 0.725258493353028
+[ 2023-05-09 23:05:51,328 ] 65 root - INFO - Checking if our model is underfitting or not

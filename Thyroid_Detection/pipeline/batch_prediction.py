@@ -43,7 +43,3 @@ def start_batch_prediction(input_file_path):
     except Exception as e:
         raise ThyroidException(e,sys)
     
-    
-
-
-

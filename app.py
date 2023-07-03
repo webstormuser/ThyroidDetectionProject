@@ -17,12 +17,10 @@ app = application
 
 model_resolver = ModelResolver(model_registry="saved_models")
 
-
 @app.route('/', methods=['GET'])  # route to display the Home page
 @cross_origin()
 def home():
     return render_template('home.html')
-
 
 @app.route('/prediction', methods=['GET', 'POST'])
 def predict_data():
@@ -61,4 +59,3 @@ if __name__ == '__main__':
         app.run(host='0.0.0.0', port=8081,debug=True)
     except Exception as e:
         raise ThyroidException(e, sys)
-

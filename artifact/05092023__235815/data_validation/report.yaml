@@ -1,0 +1,140 @@
+data_drift_within_test_dataset:
+  Class:
+    p_values: 1.0
+    same_distribution: true
+  FTI:
+    pvalues: 0.9803589605780779
+    same_distribution: true
+  I131_treatment:
+    p_values: 1.0
+    same_distribution: true
+  T3:
+    pvalues: 0.20472258126061305
+    same_distribution: true
+  T4U:
+    pvalues: 0.9989653939523467
+    same_distribution: true
+  TSH:
+    pvalues: 0.3105422922079589
+    same_distribution: true
+  TT4:
+    pvalues: 0.9361699633489127
+    same_distribution: true
+  age:
+    pvalues: 0.5055315748845173
+    same_distribution: true
+  goitre:
+    p_values: 1.0
+    same_distribution: true
+  hypopituitary:
+    p_values: 1.0
+    same_distribution: true
+  lithium:
+    p_values: 1.0
+    same_distribution: true
+  on_antithyroid_medication:
+    p_values: 1.0
+    same_distribution: true
+  on_thyroxine:
+    p_values: 1.0
+    same_distribution: true
+  pregnant:
+    p_values: 1.0
+    same_distribution: true
+  psych:
+    p_values: 1.0
+    same_distribution: true
+  query_hyperthyroid:
+    p_values: 1.0
+    same_distribution: true
+  query_hypothyroid:
+    p_values: 1.0
+    same_distribution: true
+  query_on_thyroxine:
+    p_values: 1.0
+    same_distribution: true
+  sex:
+    p_values: 1.0
+    same_distribution: true
+  sick:
+    p_values: 1.0
+    same_distribution: true
+  thyroid_surgery:
+    p_values: 1.0
+    same_distribution: true
+  tumor:
+    p_values: 1.0
+    same_distribution: true
+data_drift_within_train_dataset:
+  Class:
+    p_values: 1.0
+    same_distribution: true
+  FTI:
+    pvalues: 0.7037357008774279
+    same_distribution: true
+  I131_treatment:
+    p_values: 1.0
+    same_distribution: true
+  T3:
+    pvalues: 0.999996046489669
+    same_distribution: true
+  T4U:
+    pvalues: 0.6562514035773499
+    same_distribution: true
+  TSH:
+    pvalues: 0.8433194107376057
+    same_distribution: true
+  TT4:
+    pvalues: 0.717510349349852
+    same_distribution: true
+  age:
+    pvalues: 0.9865257374604807
+    same_distribution: true
+  goitre:
+    p_values: 1.0
+    same_distribution: true
+  hypopituitary:
+    p_values: 1.0
+    same_distribution: true
+  lithium:
+    p_values: 1.0
+    same_distribution: true
+  on_antithyroid_medication:
+    p_values: 1.0
+    same_distribution: true
+  on_thyroxine:
+    p_values: 1.0
+    same_distribution: true
+  pregnant:
+    p_values: 1.0
+    same_distribution: true
+  psych:
+    p_values: 1.0
+    same_distribution: true
+  query_hyperthyroid:
+    p_values: 1.0
+    same_distribution: true
+  query_hypothyroid:
+    p_values: 1.0
+    same_distribution: true
+  query_on_thyroxine:
+    p_values: 1.0
+    same_distribution: true
+  sex:
+    p_values: 1.0
+    same_distribution: true
+  sick:
+    p_values: 1.0
+    same_distribution: true
+  thyroid_surgery:
+    p_values: 1.0
+    same_distribution: true
+  tumor:
+    p_values: 1.0
+    same_distribution: true
+missing_values_within_base_dataset:
+- TBG
+missing_values_within_test_dataset:
+- TBG
+missing_values_within_train_dataset:
+- TBG

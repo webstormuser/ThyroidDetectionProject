@@ -1,6 +1,0 @@
-[ 2023-07-02 16:26:06,444 ] 187 werkzeug - WARNING -  * Debugger is active!
-[ 2023-07-02 16:26:06,504 ] 187 werkzeug - INFO -  * Debugger PIN: 699-236-895
-[ 2023-07-02 16:26:30,904 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:26:30] "GET / HTTP/1.1" 200 -
-[ 2023-07-02 16:26:32,004 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:26:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-[ 2023-07-02 16:34:19,095 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:34:19] "POST /prediction HTTP/1.1" 200 -
-[ 2023-07-02 16:43:58,310 ] 187 werkzeug - INFO -  * Detected change in 'F:\\New folder\\ThyroidDetection\\app.py', reloading
