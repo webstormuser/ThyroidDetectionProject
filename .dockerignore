@@ -1,0 +1,16 @@
+artifact
+logs
+Notebook
+*.egg.info
+.env
+batch_prediction.py
+data_dump.py
+main.py
+README.md 
+Docs 
+prediction 
+Capture.PNG
+Capture2.PNG
+mongotest.py
+
+

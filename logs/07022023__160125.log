@@ -1,0 +1,9 @@
+[ 2023-07-02 16:01:39,037 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-07-02 16:01:39,587 ] 187 werkzeug - INFO -  * Debugger PIN: 279-403-857
+[ 2023-07-02 16:02:23,520 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:02:23] "GET / HTTP/1.1" 200 -
+[ 2023-07-02 16:02:23,559 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:02:23] "GET / HTTP/1.1" 200 -
+[ 2023-07-02 16:02:58,220 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:02:58] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2023-07-02 16:02:58,767 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:02:58] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-07-02 16:02:59,059 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:02:59] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-07-02 16:03:00,347 ] 187 werkzeug - INFO - 127.0.0.1 - - [02/Jul/2023 16:03:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-07-02 16:04:07,990 ] 187 werkzeug - INFO -  * Detected change in 'f:\\new folder\\thyroiddetection\\app.py', reloading
