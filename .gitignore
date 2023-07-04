@@ -23,10 +23,16 @@ parts/
 sdist/
 var/
 wheels/
+logs/
+Notebook/
+Docs/
+artifact/
+prediction/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.env
 MANIFEST
 
 # PyInstaller

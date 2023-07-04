@@ -1,6 +1,6 @@
-artifact
-logs
-Notebook
+artifact/
+logs/
+Notebook/
 *.egg.info
 .env
 batch_prediction.py
@@ -8,6 +8,7 @@ data_dump.py
 main.py
 README.md 
 Docs 
+*.log
 prediction 
 Capture.PNG
 Capture2.PNG
