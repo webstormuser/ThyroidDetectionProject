@@ -6,9 +6,9 @@ from  Thyroid_Detection.entity import config_entity
 from Thyroid_Detection.components.data_ingestion import DataIngestion
 from Thyroid_Detection.components.data_validation import DataValidation
 from Thyroid_Detection.components.data_transformation import DataTransformation
-from Thyroid_Detection.components.model_trainer import ModelTrainer
-from Thyroid_Detection.components.model_evaluation import ModelEvaluation 
-from Thyroid_Detection.components.model_pusher import ModelPusher
+#from Thyroid_Detection.components.model_trainer import ModelTrainer
+#from Thyroid_Detection.components.model_evaluation import ModelEvaluation 
+#from Thyroid_Detection.components.model_pusher import ModelPusher
 from Thyroid_Detection.config import TARGET_COLUMN
 
 def start_training_pipeline():
@@ -30,7 +30,7 @@ def start_training_pipeline():
 
 
 
-         
+        ''''
         #data transformation
         data_transformation_config = config_entity.DataTransformationConfig(training_pipeline_config=training_pipeline_config)
         data_transformation = DataTransformation(data_transformation_config=data_transformation_config, 
@@ -64,6 +64,7 @@ def start_training_pipeline():
                                 data_transformation_artifact=data_transformation_artifact,
                                 model_trainer_artifact=model_trainer_artifact)
         model_pusher_artifact=model_pusher.initiate_model_pusher()
+        '''
 
         
        

@@ -15,7 +15,7 @@ class DataIngestion:
             logging.info(f"{'>>'*20} Data Ingestion {'<<'*20}")
             self.data_ingestion_config = data_ingestion_config
         except Exception as e:
-            raise InsuranceException(e, sys)
+            raise ThyroidException(error_message=e, error_detail=sys)
 
     def initiate_data_ingestion(self)->artifact_entity.DataIngestionArtifact:
         try:
