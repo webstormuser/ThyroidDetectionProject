@@ -42,7 +42,7 @@ pyrsistent==0.19.3
 python-dateutil==2.8.2
 python-dotenv==0.21.1
 pytz==2023.3
-pywin32==306
+pywin32
 PyYAML==5.4.1
 requests==2.31.0
 scikit-learn==1.2.0
