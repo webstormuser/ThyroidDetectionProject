@@ -89,7 +89,7 @@ Decision Tree and Random Forest  performed well. Decision Tree Classiifier  chos
     **MONGO_DB_URL=
 
 # Demo 
-[![Project Demo](https://drive.google.com/file/d/1cqu37oxR8wZfpl3X7gywF-9LOV15sgrx/view?usp=drive_link)]
+[![Project Demo](https://drive.google.com/file/d/1cqu37oxR8wZfpl3X7gywF-9LOV15sgrx/view?usp=drive_link)](https://drive.google.com/file/d/1cqu37oxR8wZfpl3X7gywF-9LOV15sgrx/view?usp=drive_link)
 
 
 # Deployment Webpage Link 
