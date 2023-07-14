@@ -32,7 +32,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 *.env
-*.env
+.env
 MANIFEST
 thyroid
 

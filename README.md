@@ -61,18 +61,6 @@ The main objective of this project is to predict if a person is having compensat
 Various classification algorithms like Random Forest, Decision Tree Classifier ,XGBoost, KNN etc tested.
 Decision Tree and Random Forest  performed well. Decision Tree Classiifier  chosen for the final model training and testing.
 
-
-**.env file has**:
-.env file has
-
-  MONGO_DB_URL="mongodb://localhost:27017"
-  
-  AWS_ACCESS_KEY_ID="aagswdiquyawvdiu"
-  
-  AWS_SECRET_ACCESS_KEY="sadoiuabnswodihabosdbn"
-
-
-
   curl -fsSL https://get.docker.com -o get-docker.sh
   
       sudo sh get-docker.sh
