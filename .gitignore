@@ -25,7 +25,6 @@ var/
 wheels/
 logs/
 Notebook/
-Docs/
 artifact/
 prediction/
 share/python-wheels/
