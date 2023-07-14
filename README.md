@@ -87,3 +87,15 @@ Decision Tree and Random Forest  performed well. Decision Tree Classiifier  chos
     **BUCKET_NAME=
     
     **MONGO_DB_URL=
+
+
+# Deplyment Webpage Link 
+
+
+
+
+# OUtput 
+
+![UserInput](Capture.PNG)
+
+![Prediction](Capture2.PNG)
