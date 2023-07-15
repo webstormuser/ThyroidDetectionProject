@@ -93,6 +93,7 @@ Decision Tree and Random Forest  performed well. Decision Tree Classiifier  chos
 
 
 # Deployment Webpage Link 
+[!Deployement Web link](ThyroidDetection-env.eba-pbzqihkx.us-east-1.elasticbeanstalk.com )
 
 
 
